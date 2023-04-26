@@ -1,0 +1,6 @@
+This is a man page for a custom implementation of a UNIX shell called "simple_shell". The shell takes input from either the terminal or scripts and executes them as they appear. The design and implementation of the shell was done with a minimalistic approach to only provide the basic functions of a shell similar to the one designed by Ken Thompson. The shell supports built-in commands such as env, exit, setenv, and unsetenv. It was designed, compiled, and tested on Ubuntu 20.04 LTS. The GNU Compiler Collection, gcc, is recommended for compiling simple_shell with extra flags as shown. No known bugs have been found/reported as of (August 14, 2021). The author of the shell is Mark Agugo and Mbali Sithole. If you encounter any issues/bugs, please report them to the contributors listed in the AUTHORs section.
+
+
+
+
+
