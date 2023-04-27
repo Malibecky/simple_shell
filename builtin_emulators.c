@@ -2,7 +2,7 @@
 
 /**
  * _myexit - exits shell
- * @info:  contains  potential arguments used to maintain
+ * @info:  contains  potential arguments used to keep
  *          constant function prototype.
  *  Return: exits with a given exit status
  *         (0) if info.argv[0] != "exit"
@@ -31,7 +31,7 @@ int _myexit(info_t *info)
 
 /**
  * _mycd - changes current directory
- * @info:  contains  potential arguments used to maintain
+ * @info:  contains  potential arguments used to keep
  *          constant function prototype.
  *  Return: Always 0
  */
@@ -81,7 +81,7 @@ int _mycd(info_t *info)
 
 /**
  * _myhelp - changes current directory
- * @info:  contains potential arguments used to maintain
+ * @info:  contains potential arguments used to keep
  *          constant function prototype
  *  Return: Always 0
  */

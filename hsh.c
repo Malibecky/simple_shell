@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * hsh - main shell loop
+ * hsh - the shell loop
  * @info: the parameter & return info struct
- * @av: the argument vector from main()
+ * @av: the argument vector from ()
  *
  * Return: 0 on success, 1 on error, or error code
  */

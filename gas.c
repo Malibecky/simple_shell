@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * find_command - finds the command to execute
+ * find_command - finds command to execute in path routes.
  *
- * @command: 1st position of getline input.
+ * @command: first position of getline input.
  *
- * Return: string of folder holding command to be executed.
+ * Return: string of folder for command to be executed.
  **/
 char *find_command(char *command)
 {
@@ -26,7 +26,7 @@ char *find_command(char *command)
 				folder = opendir(*split);
 				if (folder == NULL)
 				{
-					perror("impossible to read directory");
+					perror("Unable to read directory");
 				}
 				while ((entry = readdir(folder)))
 				{
@@ -42,5 +42,5 @@ char *find_command(char *command)
 					}}}}
 		environ++;
 	}
-	return ("Error: was not found");
+	return ("Error: Not Found");
 }

@@ -12,12 +12,10 @@
 #include <limits.h>
 #include <string.h>
 
-extern char **environ;
-
-char *show_input(void);
+extern char **enviro;
 void prompt(void);
 char *_strcat(char *src);
-int _strlen(char *str);
+extern int _strlen(char *str);
 void place(char *str);
 char *findfile(char *command);
 char *find_command(char *command);

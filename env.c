@@ -2,7 +2,7 @@
 
 /**
  * _myenv - prints current environment
- * @info:contains potential arguments used to maintain
+ * @info:contains potential arguments used tokeep
  *          constant function prototype
  * Return: Always 0
  */
@@ -14,7 +14,7 @@ int _myenv(info_t *info)
 
 /**
  * _getenv - gets the value of an environment variable.
- * @info: contains potential arguments used to maintain
+ * @info: contains potential arguments used to keep
  *constant function type
  * @name: env var name
  *
@@ -37,7 +37,7 @@ char *_getenv(info_t *info, const char *name)
 
 /**
  * _mysetenv - sets a new variable and modifies an existing one.
- * @info: contains potential arguments to maintain
+ * @info: contains potential arguments to keep
  *        constant function prototype
  *  Return: Always 0
  */
@@ -55,7 +55,7 @@ int _mysetenv(info_t *info)
 
 /**
  * _myunsetenv - gets rid of the environment variable.
- * @info: contains potential arguments to maintain
+ * @info: contains potential arguments to keep
  *        constant function prototype
  *  Return: Always 0
  */
@@ -76,7 +76,7 @@ int _myunsetenv(info_t *info)
 
 /**
  * populate_env_list - populates  the env linked list
- * @info: contains potential arguments used to maintain
+ * @info: contains potential arguments used to keep
  *          constant function prototype
  * Return: Always 0
  */

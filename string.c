@@ -80,7 +80,6 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 
 	lens1 = _strlen(s1);
-
 	lens2 = _strlen(s2);
 
 	a = malloc(((lens1) + (lens2) + 1) * sizeof(char));

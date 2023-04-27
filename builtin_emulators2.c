@@ -2,7 +2,7 @@
 
 /**
  * _myhistory - displays history list
- * @info: contains potential arguments used to maintain
+ * @info: contains potential arguments used to keep
  *        constant function prototype
  *  Return: Always 0
  */
@@ -81,7 +81,7 @@ int print_alias(list_t *node)
 
 /**
  * _myalias - mimics the alias builtin (man alias)
- * @info: contains potential arguments used to maintain
+ * @info: contains potential arguments used to keep
  *          constant function prototype
  *  Return: Always 0
  */

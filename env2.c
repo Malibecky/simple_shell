@@ -2,7 +2,7 @@
 
 /**
  * get_environ - returns a string of the environment variables.
- * @info:  contains potential arguments used to maintain
+ * @info:  contains potential arguments used to keep
  *          constant function prototype
  * Return: Always 0
  */
@@ -19,7 +19,7 @@ char **get_environ(info_t *info)
 
 /**
  * _unsetenv - removes the environment var
- * @info: contains potential arguments used to maintain
+ * @info: contains potential arguments used to keep
  *        constant function prototype
  *  Return: 1 on delete, 0 otherwise
  * @var: property of the string environment variable
@@ -51,7 +51,7 @@ int _unsetenv(info_t *info, char *var)
 
 /**
  * _setenv - sets a new environment variable and modifies an existing one.
- * @info: contains potential arguments used to maintain
+ * @info: contains potential arguments used to keep
  *        constant function prototype.
  * @var: property of the string env variable
  * @value: the value of the string env variable

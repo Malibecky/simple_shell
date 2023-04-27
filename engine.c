@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * lookforslash - checks if the first character is a slash.
- * @cmd:the  first string
+ * lookforslash - identifies if first char is a slash.
+ * @cmd: first string
  * Return: 1 if yes 0 if no.
  */
 int lookforslash(char *cmd)
@@ -23,9 +23,9 @@ int lookforslash(char *cmd)
 }
 
 /**
- * compareExit - checks if the first char is a slash
- * @s1: the first string
- * @s2: the exit string
+ * compareExit - identifies if first char is a slash.
+ * @s1: first string
+ * @s2: exit string
  * Return: 1 if yes 0 if no.
  */
 int compareExit(char *s1, char *s2)
@@ -44,9 +44,9 @@ int compareExit(char *s1, char *s2)
 }
 
 /**
- * compareEnv - checks if the first character is a slash
- * @s1: the first string
- * @s2: the exit string
+ * compareEnv - identifies if first char is a slash.
+ * @s1: first string
+ * @s2: exit string
  * Return: 1 if yes 0 if no.
  */
 int compareEnv(char *s1, char *s2)
@@ -64,8 +64,8 @@ int compareEnv(char *s1, char *s2)
 	return (*s1 - *s2);
 }
 /**
- * identify_string - indentifies the input from the keyboard
- * @parameter: calls prompt from another function
+ * identify_string - identyfy keyboard input.
+ * @parameter: call prompt from another function (prompt)
  * Return: str
  **/
 char **identify_string(char *parameter)
@@ -90,7 +90,7 @@ char **identify_string(char *parameter)
 }
 /**
  * controlC - avoid close the shell
- @sig: keeps the shell going
+ * @sig: keep going shell
  **/
 void  controlC(int sig)
 {

@@ -105,7 +105,7 @@ int read_history(info_t *info)
 /**
  * build_history_list - builds the history list
  * @info:  contains potential arguments
- *          used to maintain constant function prototype
+ *          used to keep constant function prototype
  * @buf: buffer
  * @linecount: the history linecount, histcount
  *
@@ -127,7 +127,7 @@ int build_history_list(info_t *info, char *buf, int linecount)
 /**
  * renumber_history - renumbers linked list after arguments.
  * @info: contains potential arguments.
- *        Used to maintain constant function prototype
+ *        Used to keep constant function prototype
  *
  * Return: the new histcount
  */
