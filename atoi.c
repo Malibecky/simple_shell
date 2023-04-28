@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * interactive - checks if shell is in interactive mode
+ * interactive - returns true if shell is interactive
  * @info: struct address
  *
- * Return: 1 if interactive mode, 0 if not
+ * Return: 1 if interactive mode, 0 otherwise
  */
 int interactive(info_t *info)
 {
@@ -12,9 +12,9 @@ int interactive(info_t *info)
 }
 
 /**
- * is_delim - checks for delimeter
+ * is_delim - checks for delimeter char
  * @c: char to check
- * @delim:  delimeter string
+ * @delim: the delimeter string
  * Return: 1 if true, 0 if false
  */
 int is_delim(char c, char *delim)
@@ -26,9 +26,9 @@ int is_delim(char c, char *delim)
 }
 
 /**
- *_isalpha - checks for alphabets
- *@c:  character to input
- *Return: 1 if alphabet, 0 otherwise
+ * _isalpha - checks for alphabets
+ * @c: character to input
+ * Return: 1 if c is alphabetic, 0 otherwise
  */
 
 int _isalpha(int c)
@@ -40,9 +40,9 @@ int _isalpha(int c)
 }
 
 /**
- *_atoi - changes the string to integer
- *@s: string to be changed
- *Return: 1 if changed, 0 otherwise
+ * _atoi - changes string to integer
+ * @s: the string to convert
+ * Return: converted number or 0 if no number in strings
  */
 
 int _atoi(char *s)
@@ -50,7 +50,7 @@ int _atoi(char *s)
 	int i, sign = 1, flag = 0, output;
 	unsigned int result = 0;
 
-	for (i = 0;  s[i] != '\0' && flag != 2; i++)
+	for (i = 0; s[i] != '\0' && flag != 2; i++)
 	{
 		if (s[i] == '-')
 			sign *= -1;
@@ -72,3 +72,4 @@ int _atoi(char *s)
 
 	return (output);
 }
+

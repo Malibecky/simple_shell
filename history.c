@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * get_history_file - fetches  history file
- * @info: structure of the parameter
+ * get_history_file - gets history file
+ * @info: parameter struct
  *
  * Return: allocated string containg history file
  */
@@ -25,10 +25,10 @@ char *get_history_file(info_t *info)
 }
 
 /**
- * write_history - writes history to a file
- * @info:  parameter struct
+ * write_history - creates file, or appends to existing file
+ * @info: the parameter struct
  *
- * Return: 1 on success,-1 0n failure
+ * Return: 1 on success, else -1
  */
 int write_history(info_t *info)
 {
@@ -55,7 +55,7 @@ int write_history(info_t *info)
 
 /**
  * read_history - reads history from file
- * @info: parameter struct
+ * @info: the parameter struct
  *
  * Return: histcount on success, 0 otherwise
  */
@@ -103,9 +103,8 @@ int read_history(info_t *info)
 }
 
 /**
- * build_history_list - builds the history list
- * @info:  contains potential arguments
- *          used to keep constant function prototype
+ * build_history_list - adds entry to a history  list
+ * @info: contains potential arguments to maintain
  * @buf: buffer
  * @linecount: the history linecount, histcount
  *
@@ -125,9 +124,8 @@ int build_history_list(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumber_history - renumbers linked list after arguments.
- * @info: contains potential arguments.
- *        Used to keep constant function prototype
+ * renumber_history - renumbers history list after changes
+ * @info:contains potential arguments to maintain
  *
  * Return: the new histcount
  */
@@ -143,3 +141,4 @@ int renumber_history(info_t *info)
 	}
 	return (info->histcount = i);
 }
+
